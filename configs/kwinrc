@@ -11,6 +11,11 @@ Id_9=23a40ab6-6a39-4dfc-8d2a-59d1a5cd9bf9
 Number=9
 Rows=1
 
+[Plugins]
+dialogparentEnabled=false
+hidecursorEnabled=true
+screenedgeEnabled=false
+
 [Tiling]
 padding=4
 
@@ -156,3 +161,6 @@ RollOverDesktops=true
 
 [Xwayland]
 Scale=1
+XwaylandEavesdrops=All
+XwaylandEavesdropsMouse=true
+XwaylandEisNoPrompt=true

@@ -17,42 +17,13 @@ for folder in "${CONFIG_FOLDERS[@]}"; do
         echo "   ⚠ Applying VS Code excludes"
 
         rsync -av --delete \
-            --exclude "Backups" \
-            --exclude "blob_storage" \
-            --exclude "Cache" \
-            --exclude "CachedConfigurations" \
-            --exclude "CachedData" \
-            --exclude "CachedExtensionVSIXs" \
-            --exclude "CachedProfilesData" \
-            --exclude "Code Cache" \
-            --exclude "Crashpad" \
-            --exclude "DawnGraphiteCache" \
-            --exclude "DawnWebGPUCache" \
-            --exclude "Dictionaries" \
-            --exclude "GPUCache" \
-            --exclude "Local Storage" \
-            --exclude "logs" \
-            --exclude "Service Worker" \
-            --exclude "Shared Dictionary" \
-            --exclude "WebStorage" \
-            --exclude "User/globalStorage" \
-            --exclude "User/History" \
-            --exclude "User/workspaceStorage" \
-            --exclude "code.lock" \
-            --exclude "Cookies" \
-            --exclude "Cookies-journal" \
-            --exclude "DIPS" \
-            --exclude "DIPS-wal" \
-            --exclude "languagepacks.json" \
-            --exclude "machineid" \
-            --exclude "Network Persistent State" \
-            --exclude "SharedStorage" \
-            --exclude "Session Storage" \
-            --exclude "SharedStorage-wal" \
-            --exclude "TransportSecurity" \
-            --exclude "Trust Tokens" \
-            --exclude "Trust Tokens-journal" \
-            "$SRC/" "$DEST/"
+          --include "User/" \
+          --include "settings.json" \
+          --include "keybindings.json" \
+          --include "Preferences" \
+          --include "snippets/" \
+          --exclude "*" \
+          "$SRC/" "$DEST/"
     else
         rsync -av --delete "$SRC/" "$DEST/"
     fi
@@ -60,7 +31,34 @@ done
 
 # ---- CONFIG FILES ----
 declare -a CONFIG_FILES=(
+  "discoverrc"
+  "dolphinrc"
+  "gtkrc"
+  "gtkrc-2.0"
+  "kcmfonts"
+  "kcminputrc"
+  "kded5rc"
+  "kglobalshortcutsrc"
+  "krdpserverrc"
+  "krunnerrc"
+  "kscreenlockerrc"
+  "ksmserverrc"
+  "kwalletrc"
+  "kwinoutputconfig.json"
   "kwinrc"
+  "kwinrulesrc"
+  "ktimezonedrc"
+  "mimeapps.list"
+  "plasma-localerc"
+  "plasmanotifyrc"
+  "plasma-org.kde.plasma.desktop-appletsrc"
+  "plasmashellrc"
+  "plasma-welcomerc"
+  "powerdevilrc"
+  "powermanagementprofilesrc"
+  "systemmonitorrc"
+  "systemsettingsrc"
+  "Trolltech.conf"
 )
 
 for file in "${CONFIG_FILES[@]}"; do
