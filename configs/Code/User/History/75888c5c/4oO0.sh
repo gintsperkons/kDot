@@ -1,0 +1,69 @@
+sudo pacman -Syu
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+bash $SCRIPT_DIR/scripts/paru.sh
+
+
+
+
+
+
+
+
+declare -a CONFIG_FOLDERS=(
+)
+
+
+#Cpy folders
+for folder in "${CONFIG_FOLDERS[@]}"; do
+    SRC="$SCRIPT_DIR/configs/$folder/"
+    DEST="$HOME/.config/$folder/"
+
+    echo "📁 Copying $SRC to $DEST"
+    mkdir -p "$DEST"
+    cp -r  "$SRC"* "$DEST"
+done
+
+
+
+
+
+
+# Ordered list of local packages
+PKG=(
+  "alacritty"
+)
+
+
+
+AUR_PKG=(
+  "zen-browser-bin"
+  "visual-studio-code-bin"
+)
+
+declare -A WEB_APPS=(
+  ["YouTube"]="https://www.youtube.com"
+  ["ClickUp"]="https://app.clickup.com"
+  ["Twitch"]="https://www.twitch.tv"
+)
+
+
+
+phase_install_local_packages() {
+    if [[ ${#PKG[@]} -gt 0 ]]; then
+        echo "🚀 Installing AUR packages..."
+        paru -S "${PKG[@]}" --needed --noconfirm
+    fi
+}
+
+phase_install_aur_packages() {
+    if [[ ${#AUR_PKG[@]} -gt 0 ]]; then
+        echo "🚀 Installing AUR packages..."
+        paru -S "${AUR_PKG[@]}" --needed --noconfirm
+    fi
+}
+
+phase_install_local_packages
+phase_install_aur_packages
+

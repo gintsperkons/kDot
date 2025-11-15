@@ -1,0 +1,140 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "f1cba1e2e1310e02570330d9ac16e144c022a573d0647d918ba0844232a15297",
+    "telemetry.devDeviceId": "80d81463-bf4f-4805-9795-6fc08ddf2840",
+    "backupWorkspaces": {
+        "workspaces": [
+            {
+                "id": "4c979c746095fc8f85234766eaf0a005",
+                "configURIPath": "file:///home/gints/.config/Code/Workspaces/1763154168641/workspace.json"
+            }
+        ],
+        "folders": [
+            {
+                "folderUri": "file:///home/gints/.config"
+            },
+            {
+                "folderUri": "file:///home/gints/projects/kDot"
+            },
+            {
+                "folderUri": "file:///home/gints/projects/nyxtra"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/gints/.config": "__default__profile__",
+            "file:///home/gints/projects/kDot": "__default__profile__",
+            "file:///home/gints/projects/nyxtra": "__default__profile__",
+            "file:///home/gints/.config/Code/Workspaces/1763154168641/workspace.json": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/gints/.config",
+            "backupPath": "/home/gints/.config/Code/Backups/8c8f61ff2d3fc2991b7c4e566fcc6ced",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080
+            }
+        },
+        "openedWindows": [
+            {
+                "folder": "file:///home/gints/.config",
+                "backupPath": "/home/gints/.config/Code/Backups/8c8f61ff2d3fc2991b7c4e566fcc6ced",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1920,
+                    "height": 1080
+                }
+            },
+            {
+                "folder": "file:///home/gints/projects/kDot",
+                "backupPath": "/home/gints/.config/Code/Backups/1b892002588602e185dcf2154b48823f",
+                "uiState": {
+                    "mode": 1,
+                    "x": 707,
+                    "y": 0,
+                    "width": 1213,
+                    "height": 1080
+                }
+            },
+            {
+                "workspaceIdentifier": {
+                    "id": "4c979c746095fc8f85234766eaf0a005",
+                    "configURIPath": "file:///home/gints/.config/Code/Workspaces/1763154168641/workspace.json"
+                },
+                "backupPath": "/home/gints/.config/Code/Backups/4c979c746095fc8f85234766eaf0a005",
+                "uiState": {
+                    "mode": 1,
+                    "x": 240,
+                    "y": 90,
+                    "width": 1440,
+                    "height": 900
+                }
+            }
+        ]
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 461,
+            "auxiliaryBarWidth": 300,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 461,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "28d91468addef3f70c4ff856b44dadfa": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "6a74bb95f0747b9a6ca8f59a5bae8b2f": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4c979c746095fc8f85234766eaf0a005": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                },
+                "6e4469fa144248793b710a958d8ca35e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": true
+                }
+            }
+        }
+    }
+}
