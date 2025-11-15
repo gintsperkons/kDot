@@ -3,26 +3,43 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 sudo cp -f $SCRIPT_DIR/defaults/pacman.conf /etc/pacman.conf
 sudo pacman -Sy --noconfirm
-
+sudo pacman -S rsync
 
 
 bash $SCRIPT_DIR/scripts/paru.sh
 
 
 
+
+# ---- CONFIG FOLDERS ----
 declare -a CONFIG_FOLDERS=(
   "zsh"
+  "Code"
 )
 
-
-#Cpy folders
 for folder in "${CONFIG_FOLDERS[@]}"; do
-    SRC="$SCRIPT_DIR/configs/$folder/"
-    DEST="$HOME/.config/$folder/"
+    SRC="$SCRIPT_DIR/configs/$folder"
+    DEST="$HOME/.config/$folder"
 
-    echo "📁 Copying $SRC to $DEST"
+    echo "📁 Copying folder $SRC → $DEST"
     mkdir -p "$DEST"
-    cp -r  "$SRC"* "$DEST"
+    cp -r "$SRC/"* "$DEST/" 
+done
+
+# ---- CONFIG FILES ----
+declare -a CONFIG_FILES=(
+  "kwinrc"
+)
+
+for file in "${CONFIG_FILES[@]}"; do
+    SRC="$SCRIPT_DIR/configs/$file"
+    DEST="$HOME/.config"
+
+    echo "📄 Copying file $SRC → $DEST"
+    mkdir -p "$DEST"
+
+    # Copy the file directly
+    cp -f "$SRC" "$DEST/"
 done
 
 
@@ -34,6 +51,7 @@ done
 PKG=(
   "alacritty"
   "zsh"
+  "lazygit"
 )
 
 
