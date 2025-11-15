@@ -47,6 +47,7 @@ for folder in "${CONFIG_FOLDERS[@]}"; do
             --exclude "machineid" \
             --exclude "Network Persistent State" \
             --exclude "SharedStorage" \
+            --exclude "Session Storage" \
             --exclude "SharedStorage-wal" \
             --exclude "TransportSecurity" \
             --exclude "Trust Tokens" \
