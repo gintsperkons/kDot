@@ -52,6 +52,7 @@ PKG=(
   "alacritty"
   "zsh"
   "lazygit"
+  "nvim"
 )
 
 
@@ -59,6 +60,7 @@ PKG=(
 AUR_PKG=(
   "zen-browser-bin"
   "visual-studio-code-bin"
+  "sourcegit-bin"
 )
 
 declare -A WEB_APPS=(

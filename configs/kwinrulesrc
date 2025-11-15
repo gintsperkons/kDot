@@ -1,8 +1,0 @@
-[249cf3ce-c498-4938-8213-ec3c0057313a]
-Description=Settings for ue
-wmclass=ue
-wmclassmatch=1
-
-[General]
-count=1
-rules=249cf3ce-c498-4938-8213-ec3c0057313a
