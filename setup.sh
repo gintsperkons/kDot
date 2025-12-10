@@ -53,6 +53,7 @@ PKG=(
   "zsh"
   "lazygit"
   "nvim"
+  "steam"
 )
 
 

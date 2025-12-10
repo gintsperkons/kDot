@@ -15,11 +15,15 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][General]
+positions={"1920x1080":["1","17","desktop:/server","0","0","desktop:/Backup","0","2","desktop:/dockers","0","4","desktop:/Syncthing","0","3","desktop:/env","0","1"]}
+sortMode=-1
+
 [Containments][2]
 activityId=
 formfactor=2
 immutability=1
-lastScreen=0
+lastScreen=3
 location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
@@ -33,7 +37,13 @@ popupHeight=400
 popupWidth=560
 
 [Containments][2][Applets][21][Configuration][Appearance]
+customDateFormat=ddd dd.mm.yyyy
+dateFormat=custom
 fontWeight=400
+
+[Containments][2][Applets][21][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][2][Applets][26]
 immutability=1
@@ -87,7 +97,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][2][Applets][7][Applets][13][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][2][Applets][7][Applets][14]
 immutability=1
@@ -105,12 +115,15 @@ plugin=org.kde.plasma.printmanager
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][2][Applets][7][Applets][17][Configuration]
+PreloadWeight=55
+
 [Containments][2][Applets][7][Applets][18]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][2][Applets][7][Applets][18][Configuration]
-PreloadWeight=55
+PreloadWeight=75
 
 [Containments][2][Applets][7][Applets][19]
 immutability=1
@@ -149,7 +162,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][2][Applets][7][Applets][31][Configuration]
-PreloadWeight=42
+PreloadWeight=0
 
 [Containments][2][Applets][7][Applets][8]
 immutability=1
@@ -198,4 +211,4 @@ wallpaperplugin=org.kde.image
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/Syncthing,0,58ab1ad9-e516-4745-a681-5b7869172da3,desktop:/Backup,0,58ab1ad9-e516-4745-a681-5b7869172da3,desktop:/env,0,58ab1ad9-e516-4745-a681-5b7869172da3,desktop:/server,0,58ab1ad9-e516-4745-a681-5b7869172da3,desktop:/dockers,0,58ab1ad9-e516-4745-a681-5b7869172da3
